@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Profile - StyleProfile</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="dashboard.html" class="nav-link">Dashboard</a>
+    </nav>
+    <button id="signout-btn" class="icon-btn">🚪 Sign Out</button>
+  </header>
+
+  <main class="section">
+    <h1>My Profile</h1>
+    <p><strong>Welcome back,</strong> <span id="profile-email"></span></p>
+
+    <div class="points-badge">
+      StylePoints: <span id="profile-stylepoints">0</span>
+    </div>
+
+    <section class="section">
+      <h3>Style Stats</h3>
+      <canvas id="profile-stats-chart" width="300"></canvas>
+    </section>
+
+    <section class="section">
+      <h3>Style Tips</h3>
+      <div id="profile-tips" class="tip-box"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
